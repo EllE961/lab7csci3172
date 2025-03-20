@@ -4,8 +4,7 @@ A React-based personal portfolio website showcasing education, skills, and proje
 
 - _Date Created_: 20 Mar 2025
 - _Last Modification Date_: 20 Mar 2025
-- _Frontend URL_: [https://yahya-portfolio.netlify.app/](https://yahya-portfolio.netlify.app/)
-- _Backend URL_: [https://yahya-portfolio-api.amplifyapp.com/](https://yahya-portfolio-api.amplifyapp.com/)
+- _Frontend URL_: [https://yahyaalsalmilab7.netlify.app/](https://yahyaalsalmilab7.netlify.app/)
 - _GitLab URL_: [https://git.cs.dal.ca/salmi/csci3172/-/tree/main/labs/lab7/](https://git.cs.dal.ca/salmi/csci3172/-/tree/main/labs/lab7/)
 
 ## Project Structure
@@ -21,8 +20,6 @@ This project consists of two separate applications:
 
 ## Built With
 
-### Frontend
-
 - [React](https://reactjs.org/) - Frontend library
 - [React Router](https://reactrouter.com/) - For client-side routing
 - [Bootstrap 5](https://getbootstrap.com/) - CSS framework for styling
@@ -30,13 +27,6 @@ This project consists of two separate applications:
 - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) - Custom styling
 - [JavaScript ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Frontend logic
 - [Netlify](https://www.netlify.com/) - For frontend deployment
-
-### Backend
-
-- [Express](https://expressjs.com/) - Backend API framework
-- [Node.js](https://nodejs.org/) - JavaScript runtime
-- [OpenWeatherMap API](https://openweathermap.org/api) - Weather data
-- [dotenv](https://www.npmjs.com/package/dotenv) - Environment variables
 
 ## Features Added in Lab 7
 
@@ -63,12 +53,6 @@ This project consists of two separate applications:
    - Improved mobile experience
    - Hamburger menu for smaller screens
    - Consistent UI across device sizes
-
-5. **Separate Backend API**
-   - RESTful API built with Express.js
-   - Projects data endpoint
-   - Weather data integration with OpenWeatherMap
-   - Error handling and status codes
 
 ## Acknowledgments
 

@@ -71,16 +71,6 @@ function Header() {
                   Projects
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link
-                  className={`nav-link ${
-                    location.pathname === "/todo" ? "active" : ""
-                  }`}
-                  to="/todo"
-                >
-                  Todo
-                </Link>
-              </li>
               <li className="nav-item ms-2">
                 <button 
                   onClick={toggleTheme} 
