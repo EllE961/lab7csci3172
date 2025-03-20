@@ -13,7 +13,7 @@ function Home() {
       try {
         setLoading(true);
         // Using axios to fetch from our backend API
-        const response = await axios.get("http://localhost:3001/api/weather");
+        const response = await axios.get("/api/weather");
         setWeather(response.data);
         setLoading(false);
       } catch (err) {

@@ -1,8 +1,20 @@
 [build]
   command = "npm run build"
   publish = "build"
+  functions = "functions"
 
-# Redirect all routes to index.html for SPA
+# API Redirects - Use our Netlify functions for API endpoints
+[[redirects]]
+  from = "/api/weather"
+  to = "/.netlify/functions/weather"
+  status = 200
+
+[[redirects]]
+  from = "/api/projects"
+  to = "/.netlify/functions/projects"
+  status = 200
+
+# Redirect all remaining routes to index.html for SPA
 [[redirects]]
   from = "/*"
   to = "/index.html"

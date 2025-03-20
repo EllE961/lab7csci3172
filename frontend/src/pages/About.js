@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import SkillTag from "../components/SkillTag";
 
 function About() {
   // Expanded skills list with categories
-  const allSkills = [
+  const allSkills = useMemo(() => [
     { name: "JavaScript", category: "Frontend" },
     { name: "Python", category: "Backend" },
     { name: "PHP", category: "Backend" },
@@ -32,7 +32,7 @@ function About() {
     { name: "Scikit-learn", category: "Machine Learning" },
     { name: "Matplotlib", category: "Data Science" },
     { name: ".NET", category: "Backend" }
-  ];
+  ], []);
 
   // Get unique categories for filter buttons
   const categories = [...new Set(allSkills.map(skill => skill.category))];
@@ -51,7 +51,7 @@ function About() {
     });
     
     setFilteredSkills(results);
-  }, [searchTerm, selectedCategory]);
+  }, [searchTerm, selectedCategory, allSkills]);
 
   // Group skills by category for display
   const groupedSkills = {};

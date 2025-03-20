@@ -11,7 +11,7 @@ function Projects() {
       try {
         setLoading(true);
         // Using axios to fetch from our backend API
-        const response = await axios.get("http://localhost:3001/api/projects");
+        const response = await axios.get("/api/projects");
         setProjects(response.data);
         setLoading(false);
       } catch (err) {
